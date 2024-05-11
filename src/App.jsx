@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -12,8 +12,13 @@ import BlogsComp from "./components/Blogs/BlogsComp.jsx";
 import Footer from "./components/Footer/Footer";
 import About from "./components/about/About.jsx";
 import Contact from "./components/contact/Contact.jsx";
+import LoginPopup from "./components/form/LoginPopup.jsx";
 
 const App = () => {
+  const [loginPopup, setLoginPopup] = useState(false);
+  const handleLoginPopup = () => {
+    setLoginPopup(!loginPopup);
+  };
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -26,16 +31,18 @@ const App = () => {
 
   return (
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <BrandsLogo />
-      <About />
-      <Services />
-      <BlogsComp />
-      <Testimonial />
-      <Contact />
+      <Navbar handleLoginPopup={handleLoginPopup} />
+      <Hero handleLoginPopup={handleLoginPopup} />
+      <BrandsLogo handleLoginPopup={handleLoginPopup} />
+      <About handleLoginPopup={handleLoginPopup} />
+      <Services handleLoginPopup={handleLoginPopup} />
+      <BlogsComp handleLoginPopup={handleLoginPopup} />
+      <Testimonial handleLoginPopup={handleLoginPopup} />
+      <Contact handleLoginPopup={handleLoginPopup} />
       
-      <Footer />
+      <Footer handleLoginPopup={handleLoginPopup} />
+
+      <LoginPopup loginPopup={loginPopup} handleLoginPopup={handleLoginPopup} />
     </div>
   );
 };

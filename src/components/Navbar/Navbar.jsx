@@ -41,7 +41,7 @@ export const MenuLinks = [
     link: "/#contact",
   },
 ];
-const Navbar = () => {
+const Navbar = ({ handleLoginPopup }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -76,9 +76,30 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <button className="primary-btn">Login</button>
+              <a
+                    href="#"
+                    onClick={handleLoginPopup}
+                    className="text-gray-700 hover:text-gray-900 px-4 py-4 inline-block select-none"
+                  >
+                    <button className="primary-btn">Login</button>
+                  </a>
+              
               {/* <DarkMode /> */}
             </ul>
+
+            <div className="block sm:hidden">
+              <ul className="flex text-xl font-semibold  justify-center items-center gap-4">
+                <li>
+                  <a
+                    href="#"
+                    onClick={handleLoginPopup}
+                    className="text-gray-700 hover:text-gray-900 px-4 py-4 inline-block"
+                  >
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
           {/* Mobile view Drawer  */}
           <div className="flex items-center gap-4 md:hidden ">
