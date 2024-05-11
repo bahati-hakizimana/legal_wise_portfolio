@@ -73,11 +73,11 @@ const Navbar = () => {
                     className=" text-lg font-medium  hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500  "
                   >
                     {name}
-                  </a> 
+                  </a>
                 </li>
               ))}
               <button className="primary-btn">Login</button>
-              <DarkMode />
+              {/* <DarkMode /> */}
             </ul>
           </nav>
           {/* Mobile view Drawer  */}
