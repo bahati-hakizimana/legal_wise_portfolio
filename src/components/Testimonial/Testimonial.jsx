@@ -65,7 +65,7 @@ const Testimonial = () => {
   };
   return (
     <>
-      <div className="py-10">
+      <div className="py-10" id="team">
         <h2
           data-aos="fade-up"
           className=" text-center text-xl">Our Team</h2>
