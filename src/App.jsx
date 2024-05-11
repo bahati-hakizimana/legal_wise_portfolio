@@ -28,7 +28,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <BrandsLogo />
-      {/* <About /> */}
+      <About />
       <Services />
       <BlogsComp />
       <Testimonial />
