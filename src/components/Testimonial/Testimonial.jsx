@@ -1,24 +1,41 @@
 import React from "react";
 import Slider from "react-slick";
+import olivierImg from '../../assets/team/olivier.jpg'
+import benjaminImg from '../../assets/team/benjamin.png'
+import clementImg from '../../assets/team/clement.jpg'
+import inesImg from '../../assets/team/ines_kazimana.jpg'
+import fordImg from '../../assets/team/ford.jpg'
 
 const testimonialData = [
   {
     id: 1,
-    name: "David Calathan - Director of Design Operations, New York",
-    text: "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
-    img: "https://picsum.photos/101/101",
+    name: "Olivier Rwamasirabo",
+    text: "Managing Partiner",
+    img: olivierImg ,
   },
   {
-    id: 1,
-    name: "David Calathan - Director of Design Operations, New York",
-    text: "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
-    img: "https://picsum.photos/102/102",
+    id: 2,
+    name: "Ntaganira Benjamin",
+    text: "Partiner(Dormant)",
+    img: benjaminImg,
   },
   {
-    id: 1,
-    name: "Smith - Director of Operations, New York",
-    text: "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
-    img: "https://picsum.photos/103/103",
+    id: 3,
+    name: "Sematungo Clement",
+    text: "Senior Associate",
+    img: clementImg,
+  },
+  {
+    id: 4,
+    name: "Kazimana Ines",
+    text: " Associate",
+    img: inesImg,
+  },
+  {
+    id: 5,
+    name: "Lincoln Ford",
+    text: " Associate",
+    img: fordImg,
   },
 ];
 
@@ -28,7 +45,7 @@ const Testimonial = () => {
     arrows: false,
     infinite: true,
     speed: 600,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 3000,
@@ -39,32 +56,39 @@ const Testimonial = () => {
   return (
     <>
       <div className="py-10">
+        <h2
+          data-aos="fade-up"
+          className=" text-center text-xl">Our Team</h2>
         <div className="container">
           {/* testimonial section */}
           <div
             data-aos="fade-up"
-            className="grid grid-cols-1 max-w-screen-xl mx-auto gap-6"
+            className="grid grid-cols-1 max-w-screen-xl mx-auto gap-2"
           >
             <Slider {...settings}>
               {testimonialData.map(({ id, name, text, img }) => {
                 return (
                   <div key={id} className="my-6">
+
                     {/* card */}
-                    <div className="flex flex-col sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl dark:bg-gray-800 relative">
-                      <img
-                        src={img}
-                        alt=""
-                        className="block mx-auto h-[300px] w-full sm:w-[200px] object-cover"
-                      />
-                      <div className="space-y-4">
-                        <p className="text-gray-500 text-black/80 dark:text-white/80 xl:pr-40">
-                          “{text}”
-                        </p>
-                        <h1 className="text-xl font-bold">{name}</h1>
+                    <div className="flex flex-col items-center justify-center sm:flex-row gap-2 md:gap-8 p-4 mx-2 rounded-xl dark:bg-gray-800 relative">
+                      <div>
+                        <img
+                          src={img}
+                          alt=""
+                          className="block mx-auto h-[300px] w-full  object-cover"
+                        />
+                        <div className="space-y-4">
+                          <p className="text-gray-500 text-black/80 dark:text-white/80 xl:pr-20">
+                            {text}
+                          </p>
+                          <h1 className="text-xl font-bold">{name}</h1>
+                        </div>
+
+
                       </div>
-                      <p className="text-black/10 text-[12rem] font-serif absolute bottom-0 right-0">
-                        ,,
-                      </p>
+
+
                     </div>
                   </div>
                 );

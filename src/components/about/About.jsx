@@ -50,7 +50,7 @@ function About() {
                                 </p>
                             </div>
                             <div>
-                            
+                                
                                 <p className="text-sm  dark:text-slate-400">
                                     Our vision is to always provide practical, consistent, and
                                     cost-effective legal solutions, with a keen focus on ultimate client satisfaction.

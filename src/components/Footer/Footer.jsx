@@ -8,35 +8,29 @@ const FooterLinks = [
     link: "/#about",
   },
   {
-    title: "Features",
-    link: "/#features",
+    title: "Services",
+    link: "/#services",
   },
   {
-    title: "Works",
-    link: "/#works",
+    title: "Team",
+    link: "/#team",
   },
-  {
-    title: "Career",
-    link: "/#career",
-  },
+  
 ];
 const HelpLinks = [
   {
-    title: "Customer Support",
-    link: "/#support",
+    title: "Tax & Investment Law",
+    link: "/#services",
   },
   {
-    title: "Delivery Details",
-    link: "/#delivery-details",
+    title: "Banking & Finance Law",
+    link: "/#services",
   },
   {
-    title: "Terms & Conditions",
-    link: "/#terms",
+    title: "Extractive Industry",
+    link: "/#services",
   },
-  {
-    title: "Privacy Policy",
-    link: "/#policy",
-  },
+
 ];
 const ResourcesLinks = [
   {
@@ -70,7 +64,7 @@ const Footer = () => {
               LegalWise
             </span>
           </a>
-            <p className="text-sm">
+            <p className="text-sm mt-2">
             Our goal is to be the law firm of choice for clients looking for a
              high degree of local and international legal expertise, integrity and
               a client-centred approach to business dealings. The principal philosophy

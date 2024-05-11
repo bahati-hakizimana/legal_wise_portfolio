@@ -11,6 +11,7 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import BlogsComp from "./components/Blogs/BlogsComp.jsx";
 import Footer from "./components/Footer/Footer";
 import About from "./components/about/About.jsx";
+import Contact from "./components/contact/Contact.jsx";
 
 const App = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const App = () => {
       <Services />
       <BlogsComp />
       <Testimonial />
+      <Contact />
       
       <Footer />
     </div>
