@@ -3,6 +3,11 @@ import { IoBookOutline } from "react-icons/io5";
 import { BsBank } from "react-icons/bs";
 import { FaIndustry } from "react-icons/fa";
 import { TbIrregularPolyhedron } from "react-icons/tb";
+import { FaCreativeCommonsNc } from "react-icons/fa";
+import { LuLamp } from "react-icons/lu";
+import { LiaUsersSolid } from "react-icons/lia";
+import { PiHandshakeBold } from "react-icons/pi";
+import { GoLaw } from "react-icons/go";
 
 const skillsData = [
   {
@@ -27,7 +32,7 @@ const skillsData = [
     link: "#",
     description:
       "The team at LegalWise Chambers has a wealth of experience and expertise on transactional, legal and regulatory matters in mining, oil and gas sectors. We provide our clients with exceptional legal advice and support in: Negotiations for licensing, permits and other regulatory authorisations.",
-      // Contract negotiation in the extractive industry, Fiscal aspects of the extractive industry, Acquisition of concessions- negotiation and preparation of contracts, Regulatory management and engagement.
+      
     aosDelay: "500",
   },
   {
@@ -38,6 +43,51 @@ const skillsData = [
       "As the global business environment becomes increasingly regulated and complex, many businesses are subject to rising regulatory scrutiny, with non-compliance posing a high threat on businesses’ financial resources and reputation. ",
     aosDelay: "700",
     //LegalWise Chambers provides practical advice to help clients monitor the regulatory trends and developments relevant to their sector and industry. We provide legal and regulatory strategies and advocacy geared at mitigating potential or likely impact on their business.
+  },
+  {
+    name: "Corporate & Commercial Law",
+    icon: <FaCreativeCommonsNc className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "LegalWise Chambers boasts a broad local and international cross-sectorial experience in handling routine and complex issues pertaining to corporate, tax and commercial law. We not only assist clients to start a business but also advise them on the legal and regulatory intricacies of running a business in Rwanda and ensure compliance with all the relevant laws. ",
+    aosDelay: "700",
+    //LegalWise Chambers provides practical advice to help clients monitor the regulatory trends and developments relevant to their sector and industry. We provide legal and regulatory strategies and advocacy geared at mitigating potential or likely impact on their business.
+  },
+  {
+    name: "Intellectual Property Law",
+    icon: <LuLamp className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "Company or individuals’ inventions, thoughts and ideas are valuable, and in today’s competitive world, it is vital to protect the intellectual property (IP) rights to them. LegalWise Chambers provides comprehensive legal advice on intellectual property protection which includes: Intellectual property law, Trademark protection and patent registration, Registration of industrial designs and counterfeiting litigation, IP registrations and infringement litigation. ",
+    aosDelay: "700",
+    
+  },
+  {
+    name: "Employment Law",
+    icon: <LiaUsersSolid className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "At LegalWise Chambers, we assist our clients to understand and comply with the Rwandan labour law. We support our clients by ensuring that contractual arrangements with their employees comply with the Rwandan employment legislation. Most importantly, we work with the client in developing comprehensive employee relations policies and internal labour process with a view to preventing potential labour disputes. ",
+    aosDelay: "700",
+    
+  },
+  {
+    name: "Public Private Partnerships (PPP) Contracts and Agreements",
+    icon: <PiHandshakeBold className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "The team at LegalWise Chambers is well experienced and equipped to provide our clients the legal expertise across the various stages of the public-private partnerships (PPP) process. We advise our clients on all the key legal and regulatory parameters that make for commercially successful and robust PPP agreements and optimal risk allocation between the public and private sectors. ",
+    aosDelay: "700",
+    
+  },
+  {
+    name: "Legal & Regulatory Due Diligence",
+    icon: <GoLaw className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "LegalWise Chambers provides legal and regulatory audits to identify and seal any legal loopholes in a client’s policies and procedures that could be grounds for lawsuits or penalties. LegalWise Chambers also conducts due diligence legal audits on behalf of clients in mergers and acquisitions (M&A) transactions. ",
+    aosDelay: "700",
+   
   },
 ];
 const Services = () => {
@@ -63,7 +113,7 @@ const Services = () => {
           </div>
 
           {/* services cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {skillsData.map((skill) => (
               <div
                 key={skill.name}

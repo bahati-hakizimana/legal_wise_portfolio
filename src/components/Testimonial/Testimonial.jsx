@@ -47,7 +47,7 @@ const Testimonial = () => {
     speed: 600,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnHover: true,
@@ -71,7 +71,7 @@ const Testimonial = () => {
                   <div key={id} className="my-6">
 
                     {/* card */}
-                    <div className="flex flex-col items-center justify-center sm:flex-row gap-2 md:gap-8 p-4 mx-2 rounded-xl dark:bg-gray-800 relative">
+                    <div className="flex flex-col items-center justify-center sm:flex-row gap-2 md:gap-8 p-2 mx-2 rounded-xl dark:bg-gray-800 relative">
                       <div>
                         <img
                           src={img}
