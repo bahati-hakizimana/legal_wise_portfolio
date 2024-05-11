@@ -84,7 +84,7 @@ const Navbar = ({ handleLoginPopup }) => {
                     <button className="primary-btn">Login</button>
                   </a>
               
-              {/* <DarkMode /> */}
+              <DarkMode />
             </ul>
 
             <div className="block sm:hidden">
