@@ -11,30 +11,40 @@ const testimonialData = [
     id: 1,
     name: "Olivier Rwamasirabo",
     text: "Managing Partiner",
+    email: " Rwamasirabo@legalwise.rw",
+    phone: " +250789999999",
     img: olivierImg ,
   },
   {
     id: 2,
     name: "Ntaganira Benjamin",
     text: "Partiner(Dormant)",
+    email: " Ntaganira@legalwise.rw",
+    phone: " +250789999999",
     img: benjaminImg,
   },
   {
     id: 3,
     name: "Sematungo Clement",
     text: "Senior Associate",
+    email: " Sematungo@legalwise.rw",
+    phone: " +250789999999",
     img: clementImg,
   },
   {
     id: 4,
     name: "Kazimana Ines",
     text: " Associate",
+    email: " I.ines@legalwise.rw",
+    phone: " +250789999999",
     img: inesImg,
   },
   {
     id: 5,
     name: "Lincoln Ford",
     text: " Associate",
+    email: " Lincoln@legalwise.rw",
+    phone: " +250789999999",
     img: fordImg,
   },
 ];
@@ -66,7 +76,7 @@ const Testimonial = () => {
             className="grid grid-cols-1 max-w-screen-xl mx-auto gap-2"
           >
             <Slider {...settings}>
-              {testimonialData.map(({ id, name, text, img }) => {
+              {testimonialData.map(({ id, name, email, phone, text, img }) => {
                 return (
                   <div key={id} className="my-6">
 
@@ -78,11 +88,14 @@ const Testimonial = () => {
                           alt=""
                           className="block mx-auto h-[300px] w-full  object-cover"
                         />
-                        <div className="space-y-4">
+                        <div className="space-y-2">
                           <p className="text-gray-500 text-black/80 dark:text-white/80 xl:pr-20">
-                            {text}
+                            {name}
                           </p>
-                          <h1 className="text-xl font-bold">{name}</h1>
+                          <h1 className="text-gray-500 text-black/80 dark:text-white/80 xl:pr-20">{text}</h1>
+                          <h1 className="text-gray-500 text-black/80 dark:text-white/80 xl:pr-20">{email}</h1>
+                          <h1 className="text-gray-500 text-black/80 dark:text-white/80 xl:pr-20">{phone}</h1>
+                          
                         </div>
 
 
