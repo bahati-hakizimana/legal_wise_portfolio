@@ -49,7 +49,7 @@ const Navbar = () => {
   };
   return (
     <div
-      className="relative z-10 w-full dark:bg-black dark:text-white duration-300
+      className="relative z-10 w-full dark:bg-black dark:text-white duration-300 shadow-lg
     "
     >
       <div className="container py-3 md:py-2">
